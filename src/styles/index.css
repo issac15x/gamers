@@ -195,16 +195,12 @@ section div h1:hover {
   section h1 {
     margin-top: 25% !important;
   }
-  body {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#497d8a), to(#0592b6b0)) !important;
-    background-image: linear-gradient(to bottom, #497d8a, #0592b6b0) !important;
-  }
   #yourway {
     margin: 0px !important;
     margin-top: 2% !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -325,6 +321,8 @@ section div h1:hover {
 
 * {
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   text-decoration: none;
   font-family: Roboto;
@@ -334,8 +332,10 @@ section div h1:hover {
 
 body {
   width: 100%;
-  height: 100vh;
-  background-image: url("../assets/Background.svg");
+  height: 100%;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#497d8a), to(#0592b6b0)) !important;
+  background-image: linear-gradient(to bottom, #497d8a, #0592b6b0) !important;
   background-repeat: no-repeat;
 }
 /*# sourceMappingURL=index.css.map */
