@@ -1,0 +1,32 @@
+nav {
+  height: 80px;
+  background-image: linear-gradient(to bottom, #052f3a, #0592b6b0);
+  box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.315);
+  display: flex;
+  align-items: center;
+
+  img {
+    margin: 8px;
+    float: left;
+    width: 70px;
+    height: 70px;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    h1 {
+      cursor: pointer;
+      margin: 5%;
+      color: aqua;
+      text-shadow: 0px 2px 5px rgb(3, 44, 44);
+      padding: 10px;
+      border-bottom: 2px solid aqua;
+      border-radius: 10px;
+      transition: 400ms;
+      &:hover {
+        background-color: rgba(125, 214, 214, 0.349);
+      }
+    }
+  }
+}
