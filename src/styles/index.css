@@ -2,53 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-nav {
-  height: 80px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#052f3a), to(#0592b6b0));
-  background-image: linear-gradient(to bottom, #052f3a, #0592b6b0);
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.315);
-          box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.315);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav img {
-  margin: 8px;
-  float: left;
-  width: 70px;
-  height: 70px;
-}
-
-nav .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-}
-
-nav .menu h1 {
-  cursor: pointer;
-  margin: 5%;
-  color: aqua;
-  text-shadow: 0px 2px 5px #032c2c;
-  padding: 10px;
-  border-bottom: 2px solid aqua;
-  border-radius: 10px;
-  -webkit-transition: 400ms;
-  transition: 400ms;
-}
-
-nav .menu h1:hover {
-  background-color: rgba(125, 214, 214, 0.349);
-}
-
 #yourway {
   margin-top: 2%;
   width: -webkit-max-content;
@@ -61,6 +14,7 @@ nav .menu h1:hover {
   text-align: center;
   color: #093986;
   margin-left: 50%;
+  font-weight: bold;
 }
 
 section {
@@ -157,7 +111,7 @@ section div h1:hover {
   }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 411px) {
   section div img {
     width: 100% !important;
     height: 200px !important;
@@ -173,38 +127,34 @@ section div h1:hover {
     margin-top: 2% !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    font-size: 15px !important;
+    font-size: 25px !important;
   }
-  nav {
+  .nav_one {
     width: 100vw !important;
   }
-  nav img {
+  .nav_one img {
     width: 50px !important;
     height: 50px !important;
   }
-  nav .menu h1 {
-    font-size: 20px !important;
+  .nav_one .menu h1 {
+    font-size: 18px !important;
     border-radius: 10px !important;
   }
 }
 
-@media only screen and (max-height: 1366px) and (max-width: 1024px) {
-  section {
-    margin-top: 10% !important;
-  }
-  section h1 {
-    margin-top: 25% !important;
-  }
+@media only screen and (max-width: 388px) {
   #yourway {
-    margin: 0px !important;
-    margin-top: 2% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    font-size: 23px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #yourway {
     font-size: 20px !important;
   }
 }
 
-nav {
+.nav_one {
   height: 80px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#052f3a), to(#0592b6b0));
   background-image: linear-gradient(to bottom, #052f3a, #0592b6b0);
@@ -218,14 +168,22 @@ nav {
           align-items: center;
 }
 
-nav img {
+.nav_one img {
+  cursor: pointer;
   margin: 8px;
   float: left;
   width: 70px;
   height: 70px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
-nav .menu {
+.nav_one img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.nav_one .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +193,8 @@ nav .menu {
   width: 100%;
 }
 
-nav .menu h1 {
+.nav_one .menu h1 {
+  font-size: 20px;
   cursor: pointer;
   margin: 5%;
   color: aqua;
@@ -247,76 +206,417 @@ nav .menu h1 {
   transition: 400ms;
 }
 
-nav .menu h1:hover {
+.nav_one .menu h1:hover {
   background-color: rgba(125, 214, 214, 0.349);
 }
 
-#yourway {
-  margin-top: 2%;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  cursor: default;
-  font-size: 35px;
-  text-shadow: 0px 4px 4px #16038073;
-  font-family: Noto Sans;
-  text-align: center;
-  color: #093986;
-  margin-left: 50%;
+@media only screen and (max-width: 882px) {
+  form {
+    width: 70% !important;
+  }
 }
 
-section {
-  margin-top: 2%;
+@media only screen and (max-width: 400px) {
+  form {
+    width: 80% !important;
+  }
+  form h1 {
+    font-size: 28px;
+  }
+  form input {
+    font-size: 13px !important;
+  }
+}
+
+.form_login_signup_container {
+  padding-top: 5%;
   width: 100%;
-  height: 100%;
-}
-
-section div {
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-section div img {
-  width: 550px;
-  height: 450px;
+.form_login_signup_container form {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 139, 139, 0.356);
+  -webkit-box-shadow: black 0px 2px 4px;
+          box-shadow: black 0px 2px 4px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
-section div h1 {
+.form_login_signup_container form h1 {
+  color: whitesmoke;
+  text-shadow: #024747 0px 2px 5px;
+  font-family: cursive;
+}
+
+.form_login_signup_container form input {
+  margin: 5%;
+  width: 100%;
+  height: 50px;
+  border: 2px solid darkcyan;
+  -webkit-box-shadow: darkcyan 0px 2px 4px;
+          box-shadow: darkcyan 0px 2px 4px;
+  border-radius: 10px;
+  outline: none;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  background: #024646;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 18px;
+}
+
+.form_login_signup_container form input:hover {
+  border: 2px solid aqua;
+}
+
+.form_login_signup_container form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.form_login_signup_container form input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.form_login_signup_container form input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.form_login_signup_container form input:focus::placeholder {
+  opacity: 0;
+}
+
+.form_login_signup_container form input::-webkit-input-placeholder {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.form_login_signup_container form input:-ms-input-placeholder {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.form_login_signup_container form input::-ms-input-placeholder {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.form_login_signup_container form input::placeholder {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.form_login_signup_container form button {
   margin-top: 5%;
-  margin-right: 50%;
-  margin-bottom: 1%;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  background-color: #1b7d8a;
+  color: white;
   cursor: pointer;
+  -webkit-box-shadow: black 0px 2px 5px;
+          box-shadow: black 0px 2px 5px;
+  text-shadow: black 0px 1px 2px;
+}
+
+.form_login_signup_container form button:hover {
+  background-color: #18bdd3;
+}
+
+.nav_two {
+  height: 80px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#052f3a), to(#0592b6b0));
+  background-image: linear-gradient(to bottom, #052f3a, #0592b6b0);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.315);
+          box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.315);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_two #logoimg {
+  cursor: pointer;
+  margin: 8px;
+  float: left;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.nav_two #logoimg:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.nav_two menu_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+  gap: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav_two menu_items search_form {
+  width: 100%;
+}
+
+.nav_two menu_items search_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_two menu_items search_form form button {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  background: transparent;
+  background: #055e99bf;
+  color: whitesmoke;
+  text-shadow: black 0px 2px 5px;
+  -webkit-box-shadow: black 0px 2px 5px;
+          box-shadow: black 0px 2px 5px;
+  font-size: 15px;
+  height: 50%;
+}
+
+.nav_two menu_items search_form form input {
+  background-color: rgba(245, 245, 245, 0.308);
+  margin-left: 5%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+}
+
+.nav_two menu_items search_form form input:hover {
+  border: 2px solid aqua;
+}
+
+.nav_two menu_items search_form form input::-webkit-input-placeholder {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.nav_two menu_items search_form form input:-ms-input-placeholder {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.nav_two menu_items search_form form input::-ms-input-placeholder {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.nav_two menu_items search_form form input::placeholder {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.nav_two menu_items button {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  height: 100%;
+  background: #055e992d;
+  color: whitesmoke;
+  font-size: 20px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.nav_two menu_items button:hover {
+  background: #055e995e;
+}
+
+.nav_two profile_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0% 1%;
+  background: -webkit-gradient(linear, left top, right top, from(#497d8a00), to(#0a18e05e));
+  background: linear-gradient(to right, #497d8a00, #0a18e05e);
+  margin-left: auto;
+}
+
+.nav_two profile_container #Logout_B {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  background: transparent;
+  background: #0a18e0bf;
+  color: whitesmoke;
+  text-shadow: black 0px 2px 5px;
+  -webkit-box-shadow: black 0px 2px 5px;
+          box-shadow: black 0px 2px 5px;
+  font-size: 15px;
+  height: 50%;
+}
+
+.nav_two profile_container profile_pcture_container {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 10px;
-  border-radius: 15px;
-  border: 2px solid #1a6289;
-  color: #080228;
-  font-weight: 600;
-  text-shadow: 0px 2px 5px #055050;
-  -webkit-box-shadow: 0px 2px 5px black;
-          box-shadow: 0px 2px 5px black;
-  background-color: rgba(0, 255, 255, 0.116);
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  display: flex wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section div h1:hover {
-  background-color: rgba(0, 255, 255, 0.424);
+.nav_two profile_container profile_pcture_container #Profile_Name {
+  font-size: 20px;
+  color: white;
+  text-shadow: #000607 0px 2px 5px;
+}
+
+.nav_two profile_container profile_pcture_container button {
+  -webkit-box-shadow: #000607 0px 2px 5px;
+          box-shadow: #000607 0px 2px 5px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.nav_two profile_container profile_pcture_container button #Profile_Picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 15%;
+  background: -webkit-gradient(linear, right top, left top, from(#0c92928c), to(#0a759830));
+  background: linear-gradient(to left, #0c92928c, #0a759830);
+}
+
+sidebar .titles {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  padding: 10px;
+  color: gold;
+  font-family: cursive;
+  font-size: 18px;
+  -webkit-box-shadow: gold -3px 2px 5px;
+          box-shadow: gold -3px 2px 5px;
+}
+
+sidebar .games {
+  margin-top: 5%;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#0c92928c), to(#0a759830));
+  background: linear-gradient(to left, #0c92928c, #0a759830);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+sidebar .games:hover {
+  background: #0c92928c;
+}
+
+sidebar .games h2 {
+  font-family: cursive;
+  background: rgba(8, 117, 180, 0.404);
+  text-shadow: 0px 1px #121c24;
+  text-align: center;
+}
+
+sidebar .games img {
+  width: 100%;
+  padding: 2%;
 }
 
 * {
@@ -337,5 +637,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#497d8a), to(#0592b6b0)) !important;
   background-image: linear-gradient(to bottom, #497d8a, #0592b6b0) !important;
   background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=index.css.map */

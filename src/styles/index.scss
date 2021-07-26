@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import "_landing", "_nav", "_section";
+@import "_landing", "_nav", "_form", "_home", "_sidebar";
 * {
   padding: 0;
   box-sizing: border-box;
@@ -15,4 +15,5 @@ body {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, #497d8a, #0592b6b0) !important;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }

@@ -1,0 +1,17 @@
+@media only screen and (max-width: 882px) {
+  form {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  form {
+    width: 80% !important;
+    h1 {
+      font-size: 28px;
+    }
+    input {
+      font-size: 13px !important;
+    }
+  }
+}
