@@ -10,7 +10,6 @@ function App() {
   
   return (
     <>
-      
       <Router>
         <Switch>
           <Route path='/' exact component = {Landing} />

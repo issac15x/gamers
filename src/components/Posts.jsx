@@ -4,10 +4,10 @@ function Home(props) {
 
   return (
     <>
-        <post>
+        {/* <post>
           <h3><span>{props.rank}</span>{props.name}</h3>
           <img src={props.imgsrc} alt="" />
-        </post>
+        </post> */}
     </>
   );
 }

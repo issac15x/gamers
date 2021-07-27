@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Posts from './Posts';
+/* import Posts from './Posts'; */
 
 function Showbar(props) {
 
   return (
     <>
-    <showbarHead>
+    {/* <showbarHead>
         <h2 id={props.type}>{props.type}</h2>
         </showbarHead>
         <showbar>
@@ -24,7 +24,7 @@ function Showbar(props) {
             </post>
         
         
-        </showbar>
+        </showbar> */}
     </>
   );
 }
