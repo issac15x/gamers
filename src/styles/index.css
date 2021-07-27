@@ -155,7 +155,7 @@ section div h1:hover {
 }
 
 .nav_one {
-  height: 80px;
+  height: 10vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#052f3a), to(#0592b6b0));
   background-image: linear-gradient(to bottom, #052f3a, #0592b6b0);
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.315);
@@ -361,7 +361,9 @@ section div h1:hover {
 }
 
 .nav_two {
-  height: 80px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#052f3a), to(#0592b6b0));
   background-image: linear-gradient(to bottom, #052f3a, #0592b6b0);
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.315);
@@ -378,8 +380,8 @@ section div h1:hover {
   cursor: pointer;
   margin: 8px;
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   -webkit-transition: 200ms;
   transition: 200ms;
 }
@@ -425,7 +427,6 @@ section div h1:hover {
   -webkit-box-shadow: black 0px 2px 5px;
           box-shadow: black 0px 2px 5px;
   font-size: 15px;
-  height: 50%;
 }
 
 .nav_two menu_items search_form form input {
@@ -481,7 +482,7 @@ section div h1:hover {
   height: 100%;
   background: #055e992d;
   color: whitesmoke;
-  font-size: 20px;
+  font-size: 15px;
   -webkit-transition: 200ms;
   transition: 200ms;
 }
@@ -530,9 +531,6 @@ section div h1:hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   display: flex wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -555,8 +553,8 @@ section div h1:hover {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 
 .nav_two profile_container profile_pcture_container button #Profile_Picture {
@@ -565,58 +563,79 @@ section div h1:hover {
   border-radius: 50%;
 }
 
-sidebar {
+showbarHead {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  width: 15%;
-  background: -webkit-gradient(linear, right top, left top, from(#0c92928c), to(#0a759830));
-  background: linear-gradient(to left, #0c92928c, #0a759830);
-}
-
-sidebar .titles {
+  gap: 20px;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  text-align: center;
-  padding: 10px;
-  color: gold;
-  font-family: cursive;
-  font-size: 18px;
-  -webkit-box-shadow: gold -3px 2px 5px;
-          box-shadow: gold -3px 2px 5px;
-}
-
-sidebar .games {
   margin-top: 5%;
+}
+
+showbarHead #Trending {
+  font-size: 25px;
+  padding: 0.5%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: gold;
+  text-shadow: goldenrod 2px 0px 3px;
+}
+
+showbarHead #Newest {
+  font-size: 25px;
+  padding: 0.5%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #060425;
+  text-shadow: #2090da 2px 0px 3px;
+}
+
+showbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  background: -webkit-gradient(linear, right top, left top, from(#0c92928c), to(#0a759830));
-  background: linear-gradient(to left, #0c92928c, #0a759830);
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  cursor: pointer;
+  height: 50vh;
+  border-bottom: 2px #0a8888 solid;
+  border-top: 2px #0a8888 solid;
+  overflow: auto;
 }
 
-sidebar .games:hover {
-  background: #0c92928c;
+showbar post {
+  height: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 3%;
+  position: relative;
+  left: 0;
 }
 
-sidebar .games h2 {
-  font-family: cursive;
-  background: rgba(8, 117, 180, 0.404);
-  text-shadow: 0px 1px #121c24;
-  text-align: center;
+showbar post h3 {
+  font-size: 22px;
+  padding: 0.5%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: whitesmoke;
+  text-shadow: black 2px 0px 3px;
 }
 
-sidebar .games img {
-  width: 100%;
-  padding: 2%;
+showbar post h3 span {
+  color: aquamarine;
+}
+
+showbar post img {
+  width: 500px;
+  height: 100%;
+  -webkit-box-shadow: black 2px 0px 5px;
+          box-shadow: black 2px 0px 5px;
+  border-radius: 15px;
 }
 
 * {

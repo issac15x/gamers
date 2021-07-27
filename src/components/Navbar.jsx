@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <>
       <div className='nav_one'>
-        <img src="https://image.flaticon.com/icons/png/128/3142/3142027.png" title="Flaticon" alt="" />
+        <img src="logo.png" title="Flaticon" alt="" />
         <div className="menu">
           <h1 id ='login' onClick={handleRoute}>Login</h1>
           <h1 id ='signup' onClick={handleRoute}>Sign up</h1>
