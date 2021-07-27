@@ -13,7 +13,7 @@ function App() {
       
       <Router>
         <Switch>
-          <Route path='/' exact component = {Landing } />
+          <Route path='/' exact component = {Landing} />
           <Route path='/login' exact component = {Login} />
           <Route path='/signup' exact component = {Signup} />
           <Route path='/home' exact component = {Home} />
