@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-/* import Showbar from './Showbar'; */
+import Showbar from './Showbar';
 
 function Home() {
   
@@ -22,7 +22,7 @@ function Home() {
   return (
     <>
       
-      {/* <div className='nav_two'> 
+      <div className='nav_two'> 
       
         <img src="logo.png"  id ='logoimg' alt="" />
         <menu_items>
@@ -50,7 +50,7 @@ function Home() {
       <Showbar posts={Trendposts} type='Trending' />
       <Showbar posts={Newposts} type='Newest' />
       
-       */}
+      
     </>
     
 
