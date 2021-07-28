@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Showbar from './Showbar';
 
 function Home() {
-  
+  //Trend posts api
   const Trendposts = [
     {id:1,name:'Nice Moves in Gta V',rank:'#1',imgsrc:'https://i.ytimg.com/vi/9QW3H8sNp1s/maxresdefault.jpg'},
     {id:2,name:'Best Gun',rank:'#2',imgsrc:'https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw-wz/WZ-Trick-or-Treat-018.jpg'},
@@ -11,6 +11,7 @@ function Home() {
     {id:4,name:'Diamond Glitch',rank:'#4',imgsrc:'http://www.carnagethecreator.com/wp-content/uploads/2015/12/minecraft-xbox-one-new-duplicati1.jpg'},
     {id:5,name:'New Places in The Map',rank:'#5',imgsrc:'http://www.gamosaurus.com/wp-content/uploads/Fortnite/saison-11/d%C3%A9fis/carte-fortnite-defi-trick-shot-danser-a-differentes-structures-monsieur-semaine-7-saison-11-chapitre-2-saison-1-gamosaurus.jpg'}
   ]
+  //New posts api
   const Newposts = [
     {id:1,name:'The Fire Sword',imgsrc:'https://i.pinimg.com/originals/6c/e3/61/6ce3613a0ea0952b692d5b712f085223.jpg'},
     {id:2,name:'Pupg Mobile Best Aim Settings',imgsrc:'https://i.ytimg.com/vi/Zb6nhS6m7XI/maxresdefault.jpg'},
@@ -18,10 +19,25 @@ function Home() {
     {id:4,name:'Rank Up Fast',imgsrc:'https://i.ytimg.com/vi/PbpZj1_SnvI/maxresdefault.jpg'},
     
   ]
+  //menu showing when prees the icon menu
+  const [menuvis,SetMenuvis] = useState('menu_INVIS');
+  const menuvisControl = ()=>{menuvis === 'menu_INVIS' ? SetMenuvis('menu_VIS'):SetMenuvis('menu_INVIS');} ;
 
   return (
     <>
-      
+      <div id={menuvis}>
+      <img src="cancel.svg" alt=""  onClick={menuvisControl}/> 
+        <div id='menu_items'>
+          
+          <form >
+            <button>Search </button>
+            <input type="text" name="search" id="search_input"  />
+          </form>
+          <menu_item>Browse</menu_item>
+          <menu_item>Browse</menu_item>
+          <menu_item>Browse</menu_item>
+        </div>
+      </div>
       <div className='nav_two'> 
       
         <img src="logo.png"  id ='logoimg' alt="" />
@@ -34,6 +50,9 @@ function Home() {
             </form>
           </search_form>
         </menu_items>
+        <div id='menu_icon_container'>
+          <button id='menu_icon' onClick={menuvisControl}><img src="menu.svg" alt="" /></button>
+        </div>
         <profile_container>
         
         

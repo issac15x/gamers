@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "_landing", "_nav", "_form", "_home", "_showbar";
 * {
@@ -16,4 +18,12 @@ body {
   background-image: linear-gradient(to bottom, #497d8a, #0592b6b0) !important;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  &::-webkit-scrollbar {
+    background-color: rgba(0, 255, 255, 0.15);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.349);
+  }
+  padding-bottom: 10%;
 }

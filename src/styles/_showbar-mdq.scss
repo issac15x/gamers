@@ -1,0 +1,21 @@
+@media only screen and (max-width: 500px) {
+  post {
+    height: 80% !important;
+    h3 {
+      font-size: 18px !important;
+    }
+    img {
+      width: 300px !important;
+      height: 80% !important;
+    }
+  }
+}
+@media only screen and (max-width: 340px) {
+  post {
+    height: 70% !important;
+    img {
+      width: 280px !important;
+      height: 70% !important;
+    }
+  }
+}

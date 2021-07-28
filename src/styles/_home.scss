@@ -1,3 +1,91 @@
+@import "_home-mdq";
+
+#menu_INVIS {
+  display: none;
+}
+#menu_VIS {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(
+    to bottom,
+    rgb(9, 4, 75),
+    rgba(0, 255, 255, 0.938)
+  );
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  z-index: 2;
+  #menu_items {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    menu_item {
+      text-align: center;
+      margin-bottom: 2%;
+      cursor: pointer;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      background: #055e99b6;
+      color: whitesmoke;
+      font-size: 15px;
+      transition: 200ms;
+      &:hover {
+        background: #055e995e;
+      }
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      gap: 5%;
+      margin: 10%;
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        background: transparent;
+        background: #055e99bf;
+        color: whitesmoke;
+        text-shadow: black 0px 2px 5px;
+        box-shadow: black 0px 2px 5px;
+        font-size: 15px;
+      }
+      input {
+        background-color: rgba(245, 245, 245, 0.308);
+        margin-left: 5%;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        width: 100%;
+        transition: 500ms;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        &:hover {
+          border: 2px solid aqua;
+        }
+        &::placeholder {
+          transition: 500ms;
+          color: whitesmoke;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
 .nav_two {
   height: max-content;
   background-image: linear-gradient(to bottom, #052f3a, #0592b6b0);
@@ -9,8 +97,8 @@
     cursor: pointer;
     margin: 8px;
     float: left;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     transition: 200ms;
     &:hover {
       transform: scale(0.9);
@@ -19,6 +107,7 @@
   menu_items {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 50%;
     height: 100%;
     gap: 100px;
@@ -73,6 +162,24 @@
       transition: 200ms;
       &:hover {
         background: #055e995e;
+      }
+    }
+  }
+  #menu_icon_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #menu_icon {
+      background: transparent;
+      border: none;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+
+      img {
+        border-radius: 20%;
       }
     }
   }
